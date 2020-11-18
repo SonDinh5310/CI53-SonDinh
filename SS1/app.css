@@ -1,0 +1,47 @@
+* {
+  font-family: "Pacifico", cursive;
+}
+
+#troll {
+  width: 700px;
+  margin: auto;
+}
+
+#question {
+  background-color: #212121;
+  font-size: 30px;
+  color: #ffffff;
+  border-radius: 10px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#answers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#answers > div {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#yes {
+  background-color: #2eac62;
+}
+#no {
+  background-color: #b65d5b;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
