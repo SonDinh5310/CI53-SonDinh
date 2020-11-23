@@ -73,18 +73,18 @@
 //     break;
 // }
 
-// let $no = document.getElementById("no");
-// let $answers = document.getElementById("answers");
-// let count = 0;
-// // them listener
-// $no.addEventListener("mouseover", function () {
-//   count++;
-//   if (count < 5) {
-//     $answers.classList.toggle("reverse");
-//   } else {
-//     $answers.style.display = "none";
-//   }
-// });
+let $no = document.getElementById("no");
+let $answers = document.getElementById("answers");
+let count = 0;
+// them listener
+$no.addEventListener("mouseover", function () {
+  count++;
+  if (count < 5) {
+    $answers.classList.toggle("reverse");
+  } else {
+    $answers.style.display = "none";
+  }
+});
 
 //ghi de listener
 // $no.onmouseover = function () {
