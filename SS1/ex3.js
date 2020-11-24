@@ -77,22 +77,23 @@ let $no = document.getElementById("no");
 let $answers = document.getElementById("answers");
 let count = 0;
 // them listener
-$no.addEventListener("mouseover", function () {
-  count++;
-  if (count < 5) {
-    $answers.classList.toggle("reverse");
-  } else {
-    $answers.style.display = "none";
-  }
-});
+// $no.addEventListener("mouseover", function () {
+//   count++;
+//   if (count < 5) {
+//     $answers.classList.toggle("reverse");
+//   } else {
+//     $answers.style.display = "none";
+//   }
+// });
 
 //ghi de listener
 // $no.onmouseover = function () {
 //   console.log("Did u just no me ?");
 // };
 
-//Bai 1: Tim hieu ve OOP?
-//-khai niem
-//-4 tinh chat? vi du?
+//Bài 3:
+let $no = document.getElementById("no");
+let $answers = document.getElementById("answers");
+let count = 0;
 
-//Bai 2: Nhap 1 mang cac so, hay tim tat ca cac so nguyen to trong mang
+$no.addEventListener("mouseover", () => {});

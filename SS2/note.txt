@@ -1,0 +1,10 @@
+Cac ham tham khao trc: 
+-map()
+-find()
+-filter()
+-findIndex()
+-indexOf()
+-splice()
+
+Nguyen tac SOLID
+3 nhom Design Pattern
