@@ -146,7 +146,7 @@ class MyMath {
   }
 }
 //! Co tu khoa static dat truoc method -> khong can phai khoi toa object tu class day
-//! Ko co tu khoa static -> phai khoi toa object
+//! Ko co tu khoa static -> phai khoi tao object
 // let m1 = new MyMath();
 console.log(MyMath.sum(1, 2));
 console.log(MyMath.subtract(3, 5));
