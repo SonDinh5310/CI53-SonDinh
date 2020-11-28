@@ -69,26 +69,30 @@ class BookShelf {
     this.dateModified = _dateModified;
   }
   addBook(book) {
+    this.dateModified = new Date().toTimeString();
     this.booksList.push(book);
-    this.dateModified = new Date().getTime();
-    console.log(this.booksList);
+    console.log("Book added");
   }
   updateBook(id, prop, data) {
-    let index = this.booksList.indexOf(id);
-    if (index !== -1) {
-      this.booksList[i][prop] = data;
-    } else {
-      alert(`Can't find the book with id ${id}`);
+    for (let i = 0; i < this, this.booksList.length; i++) {
+      if (this.booksList[i].id === id) {
+        this.booksList[i][prop] = data;
+        console.log("Book updated");
+        return;
+      }
     }
+    alert(`Can't find the book with id ${id}`);
     console.log(this.booksList);
   }
   deleteBook(id) {
-    let index = this.booksList.indexOf(id);
-    if (index !== -1) {
-      this.booksList.splice(id, 1);
-    } else {
-      alert(`Can't find the book with id ${id}`);
+    for (let i = 0; i < this.booksList.length; i++) {
+      if (this.booksList[i].id === id) {
+        this.booksList.splice(i, 1);
+        console.log("Book deleted");
+        return;
+      }
     }
+    alert(`Can't find the book with id ${id}`);
     console.log(this.booksList);
   }
   showBook() {
@@ -103,13 +107,19 @@ class BookShelf {
     for (let i = 0; i < this.booksList.length; i++) {
       if (this.booksList[i].name.toLowerCase() === name.toLowerCase()) {
         result.push(this.booksList[i].name);
+        console.log(this.booksList[i].name);
+        console.log("Book found");
       }
     }
-    return result;
+    if (result === null) {
+      alert("No books found");
+      return;
+    }
+    console.log(result);
   }
 }
 
-let timeDate = new Date().getTime();
+let timeDate = new Date();
 const book1 = new Book(1, "The Book", 10, "20-11-2020"),
   comic = new ComicBook(2, "Rick & Morty", 10, "21-11-2020", 10, 300),
   hisScienceBook = new ScienceBook(
@@ -120,18 +130,20 @@ const book1 = new Book(1, "The Book", 10, "20-11-2020"),
     "Physics"
   ),
   herTextBook = new TextBook(4, "Math Homework", 10, "10-10-2020", "Math", 3),
-  theShelf = new BookShelf("The Shelf", "Son", timeDate);
+  theShelf = new BookShelf("The Shelf", "Son", timeDate.toTimeString());
 
 book1.update("name", "Clean Code");
+console.log(book1);
 
 theShelf.addBook(book1);
 theShelf.addBook(comic);
 theShelf.addBook(hisScienceBook);
 theShelf.addBook(herTextBook);
+console.log(theShelf);
 
 theShelf.updateBook(2, "price", 20);
 
-theShelf.deleteBook(3);
+// theShelf.deleteBook(3);
 
 theShelf.showBook();
 
