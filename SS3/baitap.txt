@@ -1,0 +1,22 @@
+Cho 1 tap n nguoi nam va nu.
+Moi nguoi co it nhat 1 noi quan he ban be voi nguoi khac
+Cho thong tin 1 nguoi cho truoc.
+1. Hay viet chuong trinh tim tat ca cac nguoi ban cua nguoi do.
+2. Hay viet chuong trinh tim tat ca cac nguoi ban la nam cua nguoi do.
+3. Hay viet chuong trinh tim tat ca cac nguoi ban la nu cua nguoi do.
+4. Hay viet chuong trinh tim tat ca cac nguoi ban la nu va co do xinh gai > 5 cua nguoi do
+
+Goi y:
+
+-Person:
+    name;
+    age;
+
+-Boy:
+    handsome: tinh theo thang diem 10;
+
+-Girl:
+    beauty: tinh theo thang diem 10;
+
+-Group:
+    people: [];
