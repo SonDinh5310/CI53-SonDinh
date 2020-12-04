@@ -44,7 +44,7 @@ export default class Group {
       }
     }
   }
-  findBoyFriends(Person) {
+  findBoyFriends(person) {
     let friends = this.findFriends(person);
 
     return friends.filter((friend) => {
