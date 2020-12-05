@@ -1,0 +1,23 @@
+CSDL 
+  |
+  |
+  |
+  V
+DATA (JSON) - String
+            - Cau truc
+            - Phan tich --> du lieu (object,array)
+  |
+  |
+  |
+  V
+LIST COMPONENT ---> COMPONENT ----> UI
+
+
+
+--IDEA--
+
+->REUSABLE
+
+->LIFECYCLE --- Sinh ra (mount)
+            --- Phat trien (update)
+            --- Mat di (unmount)
