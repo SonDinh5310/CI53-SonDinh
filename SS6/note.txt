@@ -1,0 +1,25 @@
+Ten: Web nghe nhac
+
+doi tuong: tu gia -> tre
+
+chuc nang:
+- login/logout
+- Danh sach nhac, album, vids ?
+-update nhacj
+- Tin tuc
+- Bang xep hang
+- Tao room nghe nhac
+- Quang cao
+
+
+
+Ten: Web tim kiem viec lam  
+
+doi tuong: con nguoi
+
+chuc nang:
+- login/logout/signup
+- Hien thi danh sach viec lam
+- tim kiem viec lam
+- Dang tuyen viec lam
+- Tao CV xin viec ?
